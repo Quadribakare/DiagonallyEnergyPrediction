@@ -40,7 +40,17 @@
       "Bash(Remove-Item \"c:\\\\Users\\\\HP\\\\Desktop\\\\programming\\\\Diagonally_energy_prediction\\\\src\\\\model\\\\trained\\\\demo_day.json\")",
       "PowerShell(cd \"c:\\\\Users\\\\HP\\\\Desktop\\\\programming\\\\Diagonally_energy_prediction\"; $env:PYTHONPATH = \".\"; $env:ELECTRICITY_TARIFF_GBP_PER_KWH = \"0.34\"; $env:SUPABASE_URL = \"http://localhost\"; $env:SUPABASE_ANON_KEY = \"test\"; python -m pytest tests/ -q 2>&1 | tail -20)",
       "PowerShell(cd \"c:\\\\Users\\\\HP\\\\Desktop\\\\programming\\\\Diagonally_energy_prediction\"; $env:PYTHONPATH = \".\"; $env:ELECTRICITY_TARIFF_GBP_PER_KWH = \"0.34\"; $env:SUPABASE_URL = \"http://localhost\"; $env:SUPABASE_ANON_KEY = \"test\"; python -m pytest tests/ -q 2>&1 | Select-Object -Last 20)",
-      "PowerShell(cd \"c:\\\\Users\\\\HP\\\\Desktop\\\\programming\\\\Diagonally_energy_prediction\"; $env:PYTHONPATH = \".\"; $env:ELECTRICITY_TARIFF_GBP_PER_KWH = \"0.34\"; $env:SUPABASE_URL = \"http://localhost\"; $env:SUPABASE_ANON_KEY = \"test\"; python -m pytest tests/ -q 2>&1 | Select-Object -Last 15)"
+      "PowerShell(cd \"c:\\\\Users\\\\HP\\\\Desktop\\\\programming\\\\Diagonally_energy_prediction\"; $env:PYTHONPATH = \".\"; $env:ELECTRICITY_TARIFF_GBP_PER_KWH = \"0.34\"; $env:SUPABASE_URL = \"http://localhost\"; $env:SUPABASE_ANON_KEY = \"test\"; python -m pytest tests/ -q 2>&1 | Select-Object -Last 15)",
+      "Bash(git restore *)",
+      "Bash(New-Item -ItemType Directory -Path \"c:\\\\Users\\\\HP\\\\Desktop\\\\programming\\\\mci-blink-detection\" -Force)",
+      "Bash(Out-Null)",
+      "Bash(Write-Output \"Directory created\")",
+      "Bash(mkdir -p \"/mnt/c/Users/HP/Desktop/programming/mci-blink-detection\" && echo \"Directory created\")",
+      "PowerShell(Copy-Item \"c:\\\\Users\\\\HP\\\\Desktop\\\\programming\\\\blink_recognition.py\" \"c:\\\\Users\\\\HP\\\\Desktop\\\\programming\\\\mci-blink-detection\\\\blink_recognition.py\")"
+    ],
+    "additionalDirectories": [
+      "\\mnt\\c\\Users\\HP\\Desktop\\programming",
+      "c:\\Users\\HP\\Desktop\\programming"
     ]
   }
 }
